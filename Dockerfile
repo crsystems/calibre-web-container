@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get -y install wget python python-pip unzip && mkdir /build && mkdir /calibre && mkdir /library
+RUN apt-get update && apt-get -y install git wget python python-pip unzip && mkdir /build && mkdir /calibre && mkdir /library
 
 RUN cd /build && wget https://github.com/janeczku/calibre-web/archive/master.zip && unzip master.zip
 
